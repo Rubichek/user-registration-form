@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації користувача</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" class="registration-form">
+        <label for="name">Повне ім’я</label>
+        <input type="text" name="name" required />
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" size="30" required />  <br>
+        <label for="pass">Пароль</label>
+        <input type="password" name="password" minlength="8" required />
+        <label for="pass-again">Пароль ще раз</label>
+        <input type="password" name="password-again" minlength="8" required />
+        <label for="sex">Стать</label>
+        <input type="radio" name="male" checked>чоловіча
+        <input type="radio" name="female">жіноча
+        <label for="age">Вік</label>
+        <input type="text" name="age">
+        <label for="well">Курс</label>
+        <select name="select">
+            <option value="well-1">Курс 1</option>
+            <option value="well-2">Курс 2</option>
+            <option value="well-3">Курс 3</option>
+            <option value="well-4">Курс 4</option>
+            <option value="well-5">Курс 5</option>
+        </select>
+        <label for="full-address">Повна адреса</label>
+        <textarea name="text" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+        <label for="agreement"></label>
+        <input type="checkbox">Я погоджуюсь з обробкою персональных данных
+        <button type="submit">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </form>
+</body>
+</html>
