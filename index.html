@@ -8,42 +8,57 @@
 </head>
 <body>
     <form action="" class="registration-form">
-        <label for="name">Повне ім’я</label>
-        <input type="text" id="name" name="name" required />
-        <br> <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" size="30" required />
-        <br> <br>
-        <label for="pass">Пароль</label>
-        <input type="password" id="pass" name="password" minlength="8" required />
-        <br> <br>
-        <label for="pass-again">Пароль ще раз</label>
-        <input type="password" id="pass-again" name="password-again" minlength="8" required />
-        <br> <br>
-        <label for="sex">Стать</label>
-        <input type="radio" name="male" checked>чоловіча
-        <input type="radio" name="female">жіноча
-        <br> <br>
-        <label for="age">Вік</label>
-        <input type="text" name="age">
-        <br> <br>
-        <label for="well">Курс</label>
-        <select name="select">
-            <option value="well-1">Курс 1</option>
-            <option value="well-2">Курс 2</option>
-            <option value="well-3">Курс 3</option>
-            <option value="well-4">Курс 4</option>
-            <option value="well-5">Курс 5</option>
-        </select>
-        <br> <br>
-        <label for="full-address">Повна адреса</label>
-        <textarea name="text" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
-        <br> <br>
-        <label for="agreement"></label>
-        <input type="checkbox">Я погоджуюсь з обробкою персональных данных
-        <br> <br>
-        <button type="submit">Очистити форму</button>
-        <button type="submit">Зареєструватися</button>
+        <div class="field">
+            <label for="name">Повне ім’я</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+            <label for="pass">Пароль</label>
+            <input type="password" id="pass" name="password" minlength="8" required />
+        </div>
+        <div class="field">
+            <label for="pass-again">Пароль ще раз</label>
+            <input type="password" id="pass-again" name="password-again" minlength="8" required />
+        </div>
+        <div class="field">
+            <label for="sex" class="become">Стать</label>
+            <label for="sex-men" class="sex">
+                <input id="sex-men" type="radio" name="male" checked> чоловіча
+            </label>
+            <label for="sex-women" class="sex-women">
+                <input id="sex-women" type="radio" name="female"> жіноча
+            </label>
+        </div>
+        <div class="field">
+            <label for="age">Вік</label>
+            <input id="age" type="text" name="age">
+        </div>
+        <div class="field">
+            <label for="well">Курс</label>
+            <select id="well" name="select" class="courses">
+                <option value="">-=Виберiть курс=-</option>
+                <option value="well-1">Курс 1</option>
+                <option value="well-2">Курс 2</option>
+                <option value="well-3">Курс 3</option>
+                <option value="well-4">Курс 4</option>
+                <option value="well-5">Курс 5</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="full-address" class="full-address">Повна адреса</label>
+            <textarea id="full-address" class="text-area" name="text" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+        </div>
+        <div class="agreement">
+            <input type="checkbox">Я погоджуюсь з обробкою персональных данных
+        </div>
+        <div class="buttons">
+            <button type="submit">Очистити форму</button>
+            <button type="submit">Зареєструватися</button>
+        </div>
     </form>
 </body>
 </html>

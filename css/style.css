@@ -1,3 +1,75 @@
 .registration-form input {
     margin-left: 15px;
 }
+
+form {
+    width: 450px;
+    background: #efefef;
+    padding: 35px;
+}
+
+.field {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.field label {
+    font-size: 18px;
+    float: left;
+    width: 150px;
+}
+
+
+.field input {
+    float: left;
+}
+
+.field .courses,
+.field .text-area {
+    margin-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.agreement {
+    padding-bottom: 20px;
+}
+
+.agreement input {
+    margin-left: 0;
+}
+
+select#well {
+    width: 183px;
+}
+
+textarea#full-address {
+    width: 210px;
+    height: 75px;
+}
+
+label.sex-women {
+    margin-left: -65px;
+}
+
+#age {
+    width: 70px;
+    height: 30px;
+}
+
+#name,
+#email,
+#pass,
+#pass-again,
+#well {
+    width: 270px;
+    height: 30px;
+}
